@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF8F5">
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#1A1A1A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistoryTabungan"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#002196F3"
+        android:text="Tabungan"
+        android:textColor="#2196F3"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHistoryBayar"
+        app:layout_constraintTop_toTopOf="@+id/btnHistoryBayar" />
+
+    <Button
+        android:id="@+id/btnHistoryBayar"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#002196F3"
+        android:text="Pembayaran"
+        android:textColor="#2196F3"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnHistoryTabungan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHistoryPinjam"
+        app:layout_constraintTop_toTopOf="@+id/btnHistoryPinjam" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="History"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistoryPinjam"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0000CC08"
+        android:text="Peminjaman"
+        android:textColor="#2196F3"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnHistoryBayar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49"
+        app:strokeColor="#2196F3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPinjam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvPinjam"
+        app:layout_constraintEnd_toEndOf="@+id/rvPinjam"
+        app:layout_constraintStart_toStartOf="@+id/rvPinjam"
+        app:layout_constraintTop_toBottomOf="@+id/view19">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

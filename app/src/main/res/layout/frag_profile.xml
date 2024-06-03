@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A">
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="wrap_content"
+        android:layout_height="405dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#FBF8F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#1A1A1A"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogoutProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txEmailProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        android:textColor="#FBF8F5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView74"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Password"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txEmailProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txEmailProfile" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txNoRekProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txNoRekProfile" />
+
+    <TextView
+        android:id="@+id/txPassProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        android:textColor="#FBF8F5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="No. Rekening"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txNoHpProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txNoHpProfile" />
+
+    <TextView
+        android:id="@+id/txNoRekProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FBF8F5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView73"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#85CF2E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogoutProfile"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#00FFD041"
+        android:gravity="center"
+        android:text="Logout"
+        android:textColor="#FB626F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#FB626F"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="No. Hp"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/txNoHpProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FBF8F5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/txNikProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="nik. textView"
+        android:textColor="#FBF8F5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toTopOf="@+id/view9"
+        app:srcCompat="@drawable/wallet" />
+
+    <TextView
+        android:id="@+id/txTabunganProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rp0"
+        android:textColor="#FBF8F5"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabungan"
+        android:textColor="#FBF8F5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txTabunganProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txTabunganProfile" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pinjaman"
+        android:textColor="#FBF8F5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txPinjamProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txPinjamProfile" />
+
+    <TextView
+        android:id="@+id/txAlamatProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Alamat"
+        android:textColor="#FBF8F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        app:layout_constraintStart_toEndOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/txTglLahirProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tgl lahir"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/txNamaProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txNamaProfile" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="/"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/txTglLahirProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txNamaProfile"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/txJenisKelProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Laki-Laki"
+        android:textColor="#FBF8F5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/textView63"
+        app:layout_constraintTop_toBottomOf="@+id/txNamaProfile"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:textColor="#FBF8F5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txNamaProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="#FBF8F5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txTglLahirProfile"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/txPinjamProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rp0"
+        android:textColor="#FBF8F5"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/txAlamatProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile1" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txAlamatProfile"
+        app:srcCompat="@drawable/marker" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:srcCompat="@drawable/loan2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

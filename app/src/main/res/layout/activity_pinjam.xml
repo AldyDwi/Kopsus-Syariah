@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5E3EF"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/txNominalPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="@+id/txNoNotaPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView75" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nominal"
+        android:textColor="#222222"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txNoRekPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="@+id/txTglPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView61" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="No. Rekening"
+        android:textColor="#222222"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal pinjam"
+        android:textColor="#222222"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+    <TextView
+        android:id="@+id/txTglPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="@+id/txNoNotaPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView64" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAnggotaBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:padding="0.1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Peminjaman"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintStart_toEndOf="@+id/btnAnggotaBack"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/txNamaAnggotaPinjam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Nama"
+        android:textColor="#1D1B20"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view12"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <Button
+        android:id="@+id/btnPinjamAnggota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2196F3"
+        android:text="PINJAM"
+        app:layout_constraintEnd_toEndOf="@+id/view12"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <TextView
+        android:id="@+id/txNoNotaPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="textView"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="No. Nota"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/txNamaAnggotaPinjam"
+        android:textColor="#222222" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cicilan"
+        android:textColor="#222222"
+        app:layout_constraintStart_toStartOf="@+id/textView61"
+        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+    <TextView
+        android:id="@+id/txCicilanPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="@+id/txNoRekPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView69" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Biaya admin"
+        android:textColor="#222222"
+        app:layout_constraintStart_toStartOf="@+id/textView69"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+    <TextView
+        android:id="@+id/txBiayaAdminPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp25.000,00"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="@+id/txCicilanPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total Pinjaman"
+        android:textColor="#222222"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView72"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/txTotalPinjaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#222222"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txBiayaAdminPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jangka waktu"
+        android:textColor="#222222"
+        app:layout_constraintStart_toStartOf="@+id/textView69"
+        app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+    <TextView
+        android:id="@+id/txWaktuPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#222222"
+        app:layout_constraintEnd_toEndOf="@+id/txCicilanPinjam"
+        app:layout_constraintTop_toTopOf="@+id/textView62" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

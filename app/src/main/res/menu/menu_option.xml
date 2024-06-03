@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:title="Home" />
+    <item
+        android:id="@+id/itemKontak"
+        android:title="Contact" />
+    <item
+        android:id="@+id/itemEven"
+        android:title="Event" />
+    <item
+        android:id="@+id/itemHistory"
+        android:title="History" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:id="@+id/itemPinjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Peminjaman" />
+            <item
+                android:id="@+id/itemBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Pembayaran" />
+            <item
+                android:id="@+id/itemSetoran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Setoran" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/itemLogout"
+        android:title="Logout" />
+</menu>

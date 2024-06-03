@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imUpload"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="fitCenter"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/edPassAnggota"
+        app:layout_constraintTop_toBottomOf="@+id/edPassAnggota" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txIdAnggota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Id"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Kelola Anggota"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintStart_toEndOf="@+id/btnAnggotaBack"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <EditText
+        android:id="@+id/edNamaAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#EAE8E8"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/edNoHpAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#EAE8E8"
+        android:ems="10"
+        android:hint="No HP"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlamatAnggota" />
+
+    <EditText
+        android:id="@+id/edPassAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E5E3E3"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmailAnggota" />
+
+    <RadioButton
+        android:id="@+id/rbLakiLakiAnggota"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Laki-Laki"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/rbPerempuanAnggota"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/btnTglLahirAnggota" />
+
+    <RadioButton
+        android:id="@+id/rbPerempuanAnggota"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Perempuan"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rbLakiLakiAnggota"
+        app:layout_constraintTop_toTopOf="@+id/rbLakiLakiAnggota" />
+
+    <Button
+        android:id="@+id/btnInsAnggota"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E91E63"
+        android:text="INSERT"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdAnggota"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imUpload" />
+
+    <Button
+        android:id="@+id/btnUpdAnggota"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toStartOf="@+id/btnDataAnggota"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnInsAnggota"
+        app:layout_constraintTop_toTopOf="@+id/btnInsAnggota" />
+
+    <EditText
+        android:id="@+id/edAlamatAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E9E7E7"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/btnTglLahirAnggota"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="Tgl Lahir"
+        android:textSize="14sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintStart_toStartOf="@+id/edNamaAnggota"
+        app:layout_constraintTop_toBottomOf="@+id/edNamaAnggota" />
+
+    <TextView
+        android:id="@+id/txTglLahirAnggota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#9B999B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTglLahirAnggota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTglLahirAnggota" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Jenis Kelamin :"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTglLahirAnggota" />
+
+    <EditText
+        android:id="@+id/edNikAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E8E6E6"
+        android:ems="10"
+        android:hint="NIK"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNoHpAnggota" />
+
+    <EditText
+        android:id="@+id/edNoRekeningAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E7E5E5"
+        android:ems="10"
+        android:hint="No Rekening"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNikAnggota" />
+
+    <EditText
+        android:id="@+id/edEmailAnggota"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E6E4E4"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNoRekeningAnggota" />
+
+    <ImageButton
+        android:id="@+id/btnAnggotaBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:padding="0.1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <Button
+        android:id="@+id/btnDataAnggota"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="DATA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdAnggota"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdAnggota" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Masukkan foto anggota"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imUpload"
+        app:layout_constraintStart_toEndOf="@+id/imUpload"
+        app:layout_constraintTop_toTopOf="@+id/imUpload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

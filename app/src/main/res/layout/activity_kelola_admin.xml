@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F44336">
+
+    <ImageView
+        android:id="@+id/imUpload"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="fitCenter"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/edPassAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/edPassAdmin" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Masukkan foto Karyawan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imUpload"
+        app:layout_constraintStart_toEndOf="@+id/imUpload"
+        app:layout_constraintTop_toTopOf="@+id/imUpload" />
+
+    <Spinner
+        android:id="@+id/spinJabatan"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/edNamaAdmin"
+        app:layout_constraintStart_toStartOf="@+id/edNamaAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/edNamaAdmin" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txIdAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Id"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Kelola Pegawai"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintStart_toEndOf="@+id/btnAnggotaBack"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageButton
+        android:id="@+id/btnAnggotaBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:padding="0.1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <EditText
+        android:id="@+id/edNamaAdmin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#EAE8E8"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/edNoHpAdmin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#EAE8E8"
+        android:ems="10"
+        android:hint="No HP"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlamatAdmin" />
+
+    <EditText
+        android:id="@+id/edPassAdmin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E5E3E3"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmailAdmin" />
+
+    <RadioButton
+        android:id="@+id/rbLakiLakiAdmin"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:text="Laki-Laki"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/rbPerempuanAdmin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <RadioButton
+        android:id="@+id/rbPerempuanAdmin"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Perempuan"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rbLakiLakiAdmin"
+        app:layout_constraintTop_toTopOf="@+id/rbLakiLakiAdmin" />
+
+    <Button
+        android:id="@+id/btnInsAdmin"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E91E63"
+        android:text="INSERT"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdAdmin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imUpload" />
+
+    <Button
+        android:id="@+id/btnUpdAdmin"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toStartOf="@+id/btnDataAdmin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnInsAdmin"
+        app:layout_constraintTop_toTopOf="@+id/btnInsAdmin" />
+
+    <EditText
+        android:id="@+id/edAlamatAdmin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E9E7E7"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/btnTglLahirAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="Tgl Lahir"
+        android:textSize="14sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintStart_toStartOf="@+id/edNamaAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/spinJabatan" />
+
+    <TextView
+        android:id="@+id/txTglLahirAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#9B999B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTglLahirAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTglLahirAdmin" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Jenis Kelamin :"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTglLahirAdmin" />
+
+    <EditText
+        android:id="@+id/edEmailAdmin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#E6E4E4"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNoHpAdmin" />
+
+    <Button
+        android:id="@+id/btnDataAdmin"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="DATA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdAdmin"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdAdmin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

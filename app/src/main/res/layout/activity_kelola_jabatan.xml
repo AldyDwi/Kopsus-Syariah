@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edNamaJabatan"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_plaintext"
+        android:backgroundTint="#EAE8E8"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Button
+        android:id="@+id/btnInsJabatan"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E91E63"
+        android:text="INSERT"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdJabatan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNamaJabatan" />
+
+    <Button
+        android:id="@+id/btnUpdJabatan"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteJabatan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnInsJabatan"
+        app:layout_constraintTop_toTopOf="@+id/btnInsJabatan" />
+
+    <Button
+        android:id="@+id/btnDeleteJabatan"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FF5722"
+        android:text="DELETE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdJabatan"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdJabatan" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#222222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txIdJabatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Id"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Kelola Jabatan"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnggotaBack"
+        app:layout_constraintStart_toEndOf="@+id/btnAnggotaBack"
+        app:layout_constraintTop_toTopOf="@+id/btnAnggotaBack"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageButton
+        android:id="@+id/btnAnggotaBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:padding="0.1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvJabatan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsJabatan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
